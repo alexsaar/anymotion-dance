@@ -1,14 +1,15 @@
-footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
-}
-
 footer .footer {
   max-width: 1200px;
   margin: auto;
+  height: 80px;
+}
+
+footer .footer > div {
+  margin: 40px auto;
+  text-align: center;
 }
 
 footer .footer p {
-  margin: 0;
+  margin: auto;
+  text-align: center;
 }
