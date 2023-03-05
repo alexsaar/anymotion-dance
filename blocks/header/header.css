@@ -3,14 +3,16 @@
   justify-content: space-evenly;
   flex-flow: row wrap;
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 20px;
   row-gap: 40px;
+
+  color: #777;
 }
 
 #nav a {
   text-decoration: none;
-  color: #1B1B1B;
+  color: #777;
 }
 
 #nav .nav-brand {
@@ -40,8 +42,9 @@
   border-color: #DDE4E6;
 }
 
-#nav div > p:first-child {
+#nav div > p:nth-child(2) {
   font-weight: 600;
+  color: #333;
 }
 
 #nav p {
@@ -68,4 +71,8 @@
 
 .nav-drop ul {
   display: none;
+}
+
+#nav svg {
+  fill: #777;
 }
