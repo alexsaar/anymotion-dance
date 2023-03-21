@@ -1,7 +1,8 @@
 :root {
-  --text-color: #777;
+  --text-color: #1B1B1B;
   --text-color-bold: #1B1B1B;
   --border-color: #DDE4E6;
+  --icon-color: #FE2B6B;
 }
 
 /* devanagari */
@@ -37,7 +38,7 @@ body {
   font-family: "Poppins", Poppins;
   letter-spacing: 0px;
   text-align: left;
-  color: #1B1B1B;
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -57,7 +58,7 @@ a {
 }
 
 span.icon svg {
-  fill: #FE2B6B;
+  fill: var(--icon-color);
   width: 24px;
   height: 24px;
 }
