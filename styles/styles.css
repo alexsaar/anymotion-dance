@@ -1,5 +1,7 @@
 :root {
-  --nav-height: 200px;
+  --text-color: #777;
+  --text-color-bold: #1B1B1B;
+  --border-color: #DDE4E6;
 }
 
 /* devanagari */
@@ -39,10 +41,6 @@ body {
   margin: 0;
 }
 
-header {
-  height: var(--nav-height);
-}
-
 div.highlight {
   background-color: #F0F4F5;
 }
@@ -51,4 +49,19 @@ h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+span.icon svg {
+  fill: #FE2B6B;
+  width: 24px;
+  height: 24px;
+}
+
+.section {
+  padding: 4px 12px;
 }
