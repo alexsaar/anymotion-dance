@@ -3,6 +3,7 @@
   --text-color-bold: #1B1B1B;
   --border-color: #DDE4E6;
   --icon-color: #FE2B6B;
+  --default-max-width: 1200px;
 }
 
 /* devanagari */
@@ -50,6 +51,7 @@ h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.2em;
+  margin: 12px 0;
 }
 
 a {
@@ -63,6 +65,8 @@ span.icon svg {
   height: 24px;
 }
 
-.section {
-  padding: 4px 12px;
+.default-content-wrapper {
+  padding: 8px 20px;
+  max-width: var(--default-max-width);
+  margin: auto;
 }

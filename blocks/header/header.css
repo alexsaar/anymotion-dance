@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
-  max-width: 1200px;
+  max-width: var(--default-max-width);
   margin: 20px auto;
   padding: 20px;
   row-gap: 20px;
