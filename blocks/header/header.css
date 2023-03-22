@@ -71,6 +71,10 @@
   column-gap: 10px;
 }
 
+#nav div.nav-contact a {
+  color: #777;
+}
+
 @media screen and (max-width:900px) {
   #nav div.nav-address, div.nav-contact {
     border-width: 0;
