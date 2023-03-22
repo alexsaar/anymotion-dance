@@ -47,11 +47,20 @@ div.highlight {
   background-color: #F0F4F5;
 }
 
-h2 {
+h1, h2 {
+  margin: 12px 0;
+}
+
+h1 {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.2em;
-  margin: 12px 0;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2em;
 }
 
 a {
