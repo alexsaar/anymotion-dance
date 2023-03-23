@@ -7,8 +7,7 @@
   max-width: var(--default-max-width);
   margin: 0 auto;
   padding: 20px;
-  row-gap: 20px;
-  color: #777;
+  row-gap: 20px
 }
 
 @media screen and (max-width:600px) {
@@ -73,10 +72,6 @@
   display: grid;
   grid-template-columns: 24px auto;
   column-gap: 10px;
-}
-
-#nav div.nav-contact a {
-  color: #777;
 }
 
 @media screen and (max-width:900px) {
