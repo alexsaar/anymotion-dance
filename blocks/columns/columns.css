@@ -1,3 +1,9 @@
+.columns-wrapper {
+  padding: 8px 20px;
+  max-width: var(--default-max-width);
+  margin: auto;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
