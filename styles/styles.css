@@ -34,7 +34,19 @@
 }
 
 header {
-  height: 180px;
+  height: 158px;
+}
+
+@media screen and (max-width:900px) {
+  header {
+    height: 222px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  header {
+    height: 330px;
+  }
 }
 
 body {
@@ -42,7 +54,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.6;
-  font-family: Poppins, Verdana, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   letter-spacing: 0;
   text-align: left;
   color: var(--text-color);
