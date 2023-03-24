@@ -1,5 +1,5 @@
 [![CodeQL](https://github.com/alexsaar/anymotion-dance/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/alexsaar/anymotion-dance/actions/workflows/github-code-scanning/codeql)
-[![Validation](https://github.com/alexsaar/anymotion-dance/actions/workflows/run-tests.yaml/badge.svg)](https://github.com/alexsaar/anymotion-dance/actions/workflows/run-tests.yaml)
+[![Tests and Linting](https://github.com/alexsaar/anymotion-dance/actions/workflows/run-tests.yaml/badge.svg?branch=main)](https://github.com/alexsaar/anymotion-dance/actions/workflows/run-tests.yaml)
 
 # Anymotion-Dance e.V. Website
 Repository für die Webseite des Anymotion-Dance e.V.
