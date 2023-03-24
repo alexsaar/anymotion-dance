@@ -10,7 +10,7 @@ main .hero h1 {
   width: 100%;
   bottom: 20%;
   padding: 8px 0;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0 0 0 / 40%);
 }
 
 main .hero picture {
