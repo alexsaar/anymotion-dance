@@ -70,6 +70,10 @@ main .hero-slider-link {
   display: block;
 }
 
+main .hero-slider-link.active {
+  background-color: rgb(4 4 4 / 0.4);
+}
+
 main .hero h1 {
   color: white;
   text-align: center;
