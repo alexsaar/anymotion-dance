@@ -43,6 +43,11 @@ body {
   text-align: left;
   color: var(--text-color);
   margin: 0;
+  display:none;
+}
+
+body.appear {
+  display: unset;
 }
 
 div.highlight {
