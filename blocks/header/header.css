@@ -7,6 +7,10 @@ header .nav-wrapper {
 }
 
 @media screen and (max-width:600px) {
+  header:has(#nav[aria-expanded="true"]) {
+    height: 100%;
+  }
+
   header .nav-wrapper {
     position: unset;
   }
