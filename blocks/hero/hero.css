@@ -8,9 +8,8 @@ main .hero {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
   scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
+  scrollbar-width: 0;
 }
 
 main .hero::-webkit-scrollbar {
@@ -37,10 +36,7 @@ main .hero > div {
 }
 
 main .hero picture {
-  /* position: relative; */
-  /* height: 100%; */
   display: block;
-  /* z-index: -1; */
   top: 6px;
 }
 
@@ -71,13 +67,12 @@ main .hero-slider-link {
 }
 
 main .hero-slider-link.active {
-  background-color: rgb(4 4 4 / 0.4);
+  background-color: rgb(4 4 4 / 40%);
 }
 
 main .hero h1 {
   color: white;
   text-align: center;
-  /* position: absolute; */
   display: none;
   visibility: hidden;
   width: 100%;
