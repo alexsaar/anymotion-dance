@@ -7,10 +7,6 @@ header .nav-wrapper {
 }
 
 @media screen and (max-width:600px) {
-  header {
-    height: 100%;
-  }
-
   header .nav-wrapper {
     position: unset;
   }
