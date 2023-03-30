@@ -209,6 +209,7 @@ header a {
 #nav .nav-sections .nav-drop[aria-expanded="true"] ul {
   display: block;
   visibility: visible;
+  z-index: 1;
 }
 
 /* hamburger */
