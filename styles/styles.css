@@ -31,6 +31,10 @@ header {
   header {
     height: 330px;
   }
+
+  header:has(#nav[aria-expanded="true"]) {
+    height: 100%;
+  }
 }
 
 body {
@@ -74,7 +78,7 @@ h2 {
   h1 {
     font-size: 28px;
   }
-  
+
   h2 {
     font-size: 24px;
   }
