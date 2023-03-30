@@ -1,0 +1,10 @@
+main .table-wrapper {
+  padding: 20px;
+  max-width: var(--default-max-width);
+  margin: auto;
+}
+
+main .table-wrapper .table > div {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
