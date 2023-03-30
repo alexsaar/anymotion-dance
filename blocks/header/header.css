@@ -3,17 +3,6 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
-  position: fixed;
-}
-
-@media screen and (max-width:600px) {
-  header:has(#nav[aria-expanded="true"]) {
-    height: 100%;
-  }
-
-  header .nav-wrapper {
-    position: unset;
-  }
 }
 
 #nav {
