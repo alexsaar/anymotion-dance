@@ -18,7 +18,7 @@ export default async function decorate(block) {
     block.append(articleEl);
 
     const title = document.createElement('h2');
-    title.innerHTML = article.title;
+    title.innerHTML = article.title.split('|')['0'];
     articleEl.append(title);
 
     const desc = document.createElement('p');
