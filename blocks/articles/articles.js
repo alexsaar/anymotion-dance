@@ -13,14 +13,12 @@ export default async function decorate(block) {
   });
 
   [...articles].forEach((article) => {
-    console.log(article);
-
     const articleEl = document.createElement('div');
     articleEl.className = 'article';
     block.append(articleEl);
 
     const title = document.createElement('h2');
-    title.innerHTML = article.title;
+    title.innerHTML = article.title.split('|')['0'];
     articleEl.append(title);
 
     const desc = document.createElement('p');

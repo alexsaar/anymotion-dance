@@ -58,6 +58,10 @@ div.highlight {
   background-color: #F0F4F5;
 }
 
+div.centered {
+  text-align: center;
+}
+
 h1, h2 {
   margin: 12px 0;
 }
@@ -89,7 +93,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--text-color);
 }
 

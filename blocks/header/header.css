@@ -5,6 +5,10 @@ header .nav-wrapper {
   z-index: 2;
 }
 
+header a {
+  text-decoration: none;
+}
+
 #nav {
   display: flex;
   justify-content: space-evenly;
