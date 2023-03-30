@@ -13,8 +13,6 @@ export default async function decorate(block) {
   });
 
   [...articles].forEach((article) => {
-    console.log(article);
-
     const articleEl = document.createElement('div');
     articleEl.className = 'article';
     block.append(articleEl);
