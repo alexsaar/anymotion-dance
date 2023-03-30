@@ -108,3 +108,7 @@ span.icon svg {
   max-width: var(--default-max-width);
   margin: auto;
 }
+
+ol ol > li {
+  list-style-type: lower-alpha;
+}
