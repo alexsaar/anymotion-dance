@@ -1,0 +1,9 @@
+main .articles-wrapper {
+  padding: 20px;
+  max-width: var(--default-max-width);
+  margin: auto;
+}
+
+main .articles-wrapper a.more::after {
+  content: '...';
+}
