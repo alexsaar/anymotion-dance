@@ -96,6 +96,11 @@ header a {
     width: 100%;
     text-align: center;
   }
+
+  #nav div.nav-address>p:first-child,
+  #nav div.nav-contact>p:first-child {
+    height: 30.39px;
+  }
 }
 
 #nav[aria-expanded="true"] div.nav-address,
