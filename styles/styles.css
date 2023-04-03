@@ -88,6 +88,10 @@ h3 {
   font-weight: 700;
 }
 
+strong {
+  font-weight: 700;
+}
+
 @media screen and (max-width:600px) {
   h1 {
     font-size: 28px;
