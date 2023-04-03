@@ -4,6 +4,14 @@ export default function decorate(block) {
 
   // setup image columns
   [...block.children].forEach((row) => {
+    if (!row.previousElementSibling) {
+      row.classList.add('columns-left');
+    } else if (row.previousElementSibling.classList.contains('columns-left')) {
+      row.classList.add('columns-right');
+    } else {
+      row.classList.add('columns-left');
+    }
+
     [...row.children].forEach((col) => {
       const pic = col.querySelector('picture');
       if (pic) {
