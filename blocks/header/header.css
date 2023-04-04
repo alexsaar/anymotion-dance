@@ -47,6 +47,15 @@ header a {
   flex-grow: 1;
 }
 
+#nav .anymotion-logo {
+  display: flex;
+}
+
+#nav .anymotion-logo img {
+  width: 60px;
+  height: 60px;
+}
+
 @media screen and (max-width:900px) {
   #nav .nav-brand {
     flex-basis: 100%;
@@ -57,6 +66,10 @@ header a {
   #nav .nav-brand {
     flex-basis: 100%;
     font-size: 24px;
+  }
+
+  #nav .anymotion-logo {
+    justify-content: center;
   }
 
   #nav .anymotion-logo a {
