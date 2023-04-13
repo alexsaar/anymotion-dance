@@ -13,8 +13,8 @@ import {
   loadCSS,
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
-window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
+const LCP_BLOCKS = ['hero']; // add your LCP blocks to the list
+window.hlx.RUM_GENERATION = 'anymotion-dance'; // add your RUM generation information here
 
 /**
  * Builds hero block and prepends to main in a new section.
