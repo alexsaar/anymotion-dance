@@ -17,12 +17,12 @@ function onLinkClick(e) {
 
   const el = document.getElementById(e.srcElement.href.split('#')[1]);
   el.scrollIntoView(false);
-
-  setActiveLink();
 }
 
+let isScrolling;
 function onScroll(e) {
-  setTimeout(setActiveLink(e), 500);
+  window.clearTimeout(isScrolling);
+  isScrolling = setTimeout(() => setActiveLink(e), 50);
 }
 
 export default function decorate(block) {
