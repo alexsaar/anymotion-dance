@@ -1,11 +1,11 @@
 function setActiveLink() {
-  const banner = document.querySelectorAll('.hero > div');
-  [...banner].forEach((el) => {
+  const slides = document.querySelectorAll('.hero > div');
+  [...slides].forEach((el) => {
     const bounding = el.getBoundingClientRect();
-    if (bounding.top >= 0
-      && bounding.left >= 0
-      && bounding.right <= window.innerWidth
-      && bounding.bottom <= window.innerHeight) {
+    if (bounding.top + 1 >= 0
+      && bounding.left + 1 >= 0
+      && bounding.right - 1 <= (window.innerWidth || document.documentElement.clientWidth)
+      && bounding.bottom - 1 <= (window.innerHeight || document.documentElement.clientHeight)) {
       document.querySelector('.hero-slider-link.active').classList.remove('active');
       document.querySelector(`[href="#${el.id}"]`).classList.add('active');
     }
@@ -17,12 +17,12 @@ function onLinkClick(e) {
 
   const el = document.getElementById(e.srcElement.href.split('#')[1]);
   el.scrollIntoView(false);
-
-  setActiveLink();
 }
 
+let isScrolling;
 function onScroll(e) {
-  setTimeout(setActiveLink(e), 500);
+  window.clearTimeout(isScrolling);
+  isScrolling = setTimeout(() => setActiveLink(e), 50);
 }
 
 export default function decorate(block) {
