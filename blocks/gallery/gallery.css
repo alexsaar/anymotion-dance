@@ -1,0 +1,49 @@
+.gallery-wrapper {
+  padding: 8px 20px;
+  max-width: var(--default-max-width);
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 20px 20px;
+}
+
+.gallery .folder {
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .gallery .folder {
+    width: 100%;
+  }
+}
+
+.gallery .folder .thumb img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery .gallery-overlay {
+  visibility: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: white;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: 0;
+}
+
+.gallery .gallery-overlay.active {
+  visibility: unset;
+  display: unset;
+}
