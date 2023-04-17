@@ -30,11 +30,16 @@
 
 .gallery .gallery-overlay {
   visibility: hidden;
-  display: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: top;
+  row-gap: 20px;
   position: fixed;
   top: 0;
   left: 0;
   min-height: 100vh;
+  width: 100vw;
+  padding: 40px 0;
   background-color: white;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -45,5 +50,35 @@
 
 .gallery .gallery-overlay.active {
   visibility: unset;
-  display: unset;
+}
+
+.gallery .gallery-overlay img {
+  width: 80%;
+}
+
+.gallery .gallery-overlay .gallery-close {
+  display: flex;
+}
+
+.gallery .gallery-overlay .gallery-close::before,
+.gallery .gallery-overlay .gallery-close::after {
+  content:'';
+  display:flex;
+  box-sizing: border-box;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-color: black;
+  transform: rotate(45deg);
+}
+
+.gallery .gallery-overlay .gallery-close::before {
+  border-width: 1px 1px 0 0;
+}
+
+.gallery .gallery-overlay .gallery-close::after {
+  border-width: 0 0 1px 1px;
+  position: relative;
+  left: 4px;
 }

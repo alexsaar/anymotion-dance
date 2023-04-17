@@ -2,7 +2,7 @@ const MIME_FOLDER = 'application/vnd.google-apps.folder';
 const MIME_IMG = 'image/';
 
 function showGallery(e) {
-  const wrapper = e.srcElement.parentElement.parentElement;
+  const wrapper = e.srcElement.parentElement.parentElement.parentElement;
   wrapper.querySelector('.gallery-overlay').classList.add('active');
 }
 
@@ -10,7 +10,10 @@ function createImgEl(file, key) {
   const imgEl = document.createElement('img');
   imgEl.src = `https://www.googleapis.com/drive/v3/files/${file.id}?&key=${key}&alt=media`;
   imgEl.loading = 'lazy';
-  return imgEl;
+
+  const imgContainerEl = document.createElement('div');
+  imgContainerEl.appendChild(imgEl);
+  return imgContainerEl;
 }
 
 async function retrieveImages(folder, key, block) {
@@ -41,6 +44,10 @@ async function retrieveImages(folder, key, block) {
           galleryEl = document.createElement('div');
           galleryEl.classList.add('gallery-overlay');
           folderEl.appendChild(galleryEl);
+
+          const closeEl = document.createElement('div');
+          closeEl.classList.add('gallery-close');
+          galleryEl.appendChild(closeEl);
 
           thumbEl.appendChild(createImgEl(file, key));
           onclick = showGallery;
